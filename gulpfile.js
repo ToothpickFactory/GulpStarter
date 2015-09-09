@@ -54,7 +54,7 @@ gulp.task('index', function () {
 
 gulp.task('build-templates', function () {
   return gulp.src('./src/**/*.html')
-   .pipe(templateCache({module:'lfg'}))
+   .pipe(templateCache({module:'app'}))
    .pipe(concat('templates.js'))
    .pipe(gulp.dest('./www/js'));
 });

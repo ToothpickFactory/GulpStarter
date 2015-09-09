@@ -1,0 +1,69 @@
+/*
+To customize the look and feel of Ionic, you can override the variables
+in ionic's _variables.scss file.
+
+For example, you might change some of the default colors:
+
+$light:                           #fff !default;
+$stable:                          #f8f8f8 !default;
+$positive:                        #387ef5 !default;
+$calm:                            #11c1f3 !default;
+$balanced:                        #33cd5f !default;
+$energized:                       #ffc900 !default;
+$assertive:                       #ef473a !default;
+$royal:                           #886aea !default;
+$dark:                            #444 !default;
+*/
+
+// The path for our ionicons font files, relative to the built CSS in www/css
+$ionicons-font-path: "../lib/ionic/fonts" !default;
+
+// Include all of Ionic
+@import "www/lib/ionic/scss/ionic";
+// $font-path: "../css/fonts" !default;
+@import "www/css/fonts/antonio/Antonio-Regular.ttf";
+
+$font-headers:"Antonio", "Impact", sans-serif;
+
+$color-primary:     $positive;
+$color-accent:      lighten($color-primary, 20%);
+$color-background:  rgb(20,20,20);
+$color-background-light:lighten($color-background,15%);
+
+$footer-background: transparentize($color-background, 0.4);
+$header-background: $footer-background;
+
+$border-primary: solid 1px $color-primary;
+
+$font-size-xlarge:24px;
+$font-size-large:20px;
+$font-size-normal:16px;
+$font-size-small:14px;
+$font-size-xsmall:11px;
+
+
+body, .pane, {
+  padding-top:50px;
+  background-color:$color-background;
+
+}
+
+div, h1, h2, h3 {
+  color:white;
+}
+
+
+ion-content {
+  background-color:$color-background;
+}
+
+// Atomic
+@import "fields";
+
+
+// Pages
+@import "events";
+@import "search";
+@import "header";
+@import "event";
+@import "navigation";
