@@ -15,7 +15,7 @@ gulp.task('default', function(cb){
 
 gulp.task('watch', function() {
   gulp.watch(['./src/**'], function(){
-      runSequence(coreSequence,'index',cb);
+      runSequence(coreSequence,'index');
   });
 });
 
