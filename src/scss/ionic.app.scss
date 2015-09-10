@@ -56,14 +56,3 @@ div, h1, h2, h3 {
 ion-content {
   background-color:$color-background;
 }
-
-// Atomic
-@import "fields";
-
-
-// Pages
-@import "events";
-@import "search";
-@import "header";
-@import "event";
-@import "navigation";

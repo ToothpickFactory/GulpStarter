@@ -20,7 +20,7 @@ gulp.task('watch', function() {
 });
 
 gulp.task('sass', function(done) {
-  gulp.src('./src/sass/**/*.scss')
+  gulp.src('./src/scss/**/*.scss')
     .pipe(sass({errLogToConsole: true}))
     .pipe(concat('app.css'))
     .pipe(gulp.dest('./www/css/'))
